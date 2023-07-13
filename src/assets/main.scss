@@ -1,0 +1,68 @@
+@import './base.css';
+#app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  padding: 0 15px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.wrapper {
+  flex: 1 1 auto;
+}
+
+* {
+	/*fireFox*/
+	scrollbar-color: #919cb8 #ffffff; /* «цвет ползунка» «цвет полосы скроллбара» */
+	scrollbar-width: thin ;  /* толщина */
+  &::-webkit-scrollbar {
+    width: 0.4rem; /* ширина scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background: #fff; /* цвет дорожки */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #919cb8; /* цвет плашки */
+    border-radius: 15px; /* закругления плашки */
+    border: 0.2rem; /* padding вокруг плашки */
+  }
+}
+
+
+// общие классы
+.image {
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	object-fit: cover;
+}
+/*
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */

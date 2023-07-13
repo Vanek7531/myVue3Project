@@ -1,0 +1,21 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nav-menu {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	& nav:first-child {
+		margin-right: 2rem;
+	}
+}
+.nav-buttons {
+	display: flex;
+	gap: 2rem;
+	& :first-child {
+		background: transparent!important;
+		text-decoration: underline;
+	}
+}

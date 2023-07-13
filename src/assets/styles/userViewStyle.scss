@@ -1,0 +1,51 @@
+.user-account--view {
+  display: flex;
+}
+.user-account--view__user-main--info {
+  flex: 0 1 30%;
+}
+.user-main--info {
+
+  &__user {
+    padding: 2rem 2rem 2rem 1rem;
+    border-radius: 12px;
+    background: #fff;
+		display: flex;
+		margin-bottom: 1rem;
+  }
+  &__avatar {
+    border-radius: 2rem;
+    min-width: 40px;
+    height: 40px;
+    overflow: hidden;
+    margin-right: 0.5rem;
+  }
+  &__fio {
+			font-size: 1rem;
+			font-weight: 600;
+  }
+  &__place {
+		display: flex;
+		font-size: 0.75rem;
+		color: #D7DBE5;
+  }
+  // **********
+  &__swap-tarif {
+  }
+  &__tarif {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+  }
+  &__rating {
+  }
+  &__message {
+  }
+  &__views {
+  }
+  &__search {
+  }
+}
+.user-account--view__user-all--info {
+  flex: 0 1 70%;
+}

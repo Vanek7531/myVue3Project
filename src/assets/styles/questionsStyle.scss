@@ -1,0 +1,74 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.questions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+  .card {
+		width: 390px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1.9rem;
+      border-radius: 12px;
+      background: #fff;
+      color: #121212;
+    }
+
+    &__header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & p {
+        font-weight: 600;
+      }
+    }
+    &__header--img {
+      border-radius: 2rem;
+      min-width: 40px;
+      height: 40px;
+      overflow: hidden;
+      margin-right: 0.2rem;
+    }
+    &__header--fio {
+      display: flex;
+      align-items: center;
+      flex: 0 1 65%;
+    }
+    &__header--date {
+      color: #919cb8;
+    }
+    &__statuses {
+      display: flex;
+      justify-content: space-around;
+      & div {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__main {
+    }
+    &__btn {
+      text-align: end;
+      text-decoration: underline;
+      cursor: pointer;
+      color: #4b73db;
+    }
+  }
+}
