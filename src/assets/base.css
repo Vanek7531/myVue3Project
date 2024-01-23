@@ -4,10 +4,11 @@
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
+  --blue-compas: #4b73db;
   --vt-c-black: #181818;
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
-	--light-gray-compas: #f8f8fba1;
+  --light-gray-compas: #f8f8fba1;
   --vt-c-indigo: #2c3e50;
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
@@ -58,19 +59,23 @@
   font-weight: normal;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   /* color: var(--color-text); */
-	color: var(--blue-compas, #4B73DB);
+  color: var(--blue-compas, #4b73db);
   background: var(--light-gray-compas);
   transition: color 0.5s, background-color 0.5s;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-	font-size: 16px;
-	font-family: Inter;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 140%;
+  font-size: 16px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+p {
+  margin: 0 !important;
 }

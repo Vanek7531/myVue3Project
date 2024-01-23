@@ -5,6 +5,7 @@ import { defineComponent } from "vue";
 export default defineComponent({
   props: {
     size: { type: Number, default: 32 },
+    color: { type: String, default: "#4B73DB" },
   },
   setup() {},
 });
@@ -19,13 +20,13 @@ export default defineComponent({
   >
     <path
       d="M16 13L10 19"
-      stroke="#4B73DB"
+      :stroke="color"
       stroke-width="1.5"
       stroke-linecap="round"
     />
     <path
       d="M16 13L22 19"
-      stroke="#4B73DB"
+      :stroke="color"
       stroke-width="1.5"
       stroke-linecap="round"
     />

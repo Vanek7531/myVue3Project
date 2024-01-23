@@ -6,6 +6,7 @@
   font-weight: 400;
   line-height: 115%;
   color: #414141;
+  // background: #fff;
   div {
     display: flex;
     flex-direction: column;
@@ -17,5 +18,11 @@
   }
   .button {
     padding: 0.5rem 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
   }
 }
